@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beer Lover Quiz</title>
+    <link rel="stylesheet" href="beer.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+      <header>
+        <h1>Beer Pairings Quiz</h1>
+      </header>
+    <div class = "start-quiz">
+     <button class='start-button'>START QUIZ</button>
+    </div>
+
+        <div class="quizPage">
+        <h2 id="quizPageHeader">If you love beer, help me pair it with food!</h2>
+        
+        
+                <h2 id ="questionNum"></h2>
+                    <h2 id ="score"></h2>
+                    <div class="response"></div>
+                    <!--<button type="next" class = 'nextButton'>Next</button>-->
+                    
+          
+            <div class="container1">
+              <h2 id ="question">Question here</h2> 
+            
+
+                <div class = 'choices'>
+                 <form id="form">
+                  <label for = "choice0"></label><input type="radio" class ="choice0" name="value"  value = 0  required><span id="choice0"></span><br>
+                      <label for = "choice1"></label><input type="radio" class ="choice1" name="value"  value = 1 required><span id="choice1"></span><br>
+                      <label for = "choice2"></label><input type="radio" class ="choice2" name="value"  value = 2 required><span id="choice2"></span><br>
+                      <label for = "choice3"></label><input type="radio" class ="choice3" name="value"  value = 3 required><span id="choice3"></span><br>
+                      <button type="submit" class ="answerButton">Submit   </button>
+                      <button type="next" class = 'nextButton'>Next   </button>
+                    </form>  
+                     </div> 
+                </div>
+              </div>
+        <div class ="resultsPage">
+        <h2 class="passFail">You Passed/Failed<h2>
+           <p id="passFail"></p>
+              <button onclick="location.href= 'index.html'" class = 'restart' >Try Again?</button>
+                </div>
+              
+                
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="game.js"></script>
+
+
+    
+</body>
+</html>
